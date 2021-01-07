@@ -1,0 +1,121 @@
+body
+{
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 100;
+   color: #fff;
+}
+.bg-video-container
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+     z-index: -2; 
+
+
+}
+.bg-video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.clock-face
+{
+    width: 80vmin;
+    height: 80vmin;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.clock-face::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    left: 1%;
+    top: 1%;
+
+}
+
+.clock-face::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:  #fff;
+    border-radius: 50%;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+
+}
+.clock_hand
+{
+    background: #fff;
+    position: absolute;
+}
+.clock_hours
+{
+    width: 4px;
+    height: 30%;
+     left: calc(50% - 2px);
+    bottom: calc(50% - 40px); 
+    transform-origin: 2px calc(100% - 40px);
+}
+.clock_minutes
+{
+    width: 4px;
+    height: 40%;
+     left: calc(50% - 2px);
+    bottom: calc(50% - 40px); 
+    transform-origin: 2px calc(100% - 40px);
+}
+.clock_seconds
+{
+    width: 1px;
+    height: 50%;
+     left: calc(50% - 1px);
+    bottom: calc(50% - 40px); 
+    transform: rotate(45deg);
+    transform-origin: 1px calc(100% - 40px);
+}
+.clock-heading
+{
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20vmin;
+}
+.countdown-heading
+{
+    font-weight: 100;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.countdown_body
+{
+    display: flex;
+    font-size: 27px;
+}
+.clock-countdown
+{
+    text-align: center;
+}
